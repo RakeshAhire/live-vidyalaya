@@ -6,6 +6,7 @@ import SimpleSlider from '../Components/slider'
 import VisionMoto from '../Components/VisionMoto'
 import Footer from '../Components/Footer'
 import HambergerNavbar from '../Components/Navbar'
+import MainChat from '../Components/chat/MainChat'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
