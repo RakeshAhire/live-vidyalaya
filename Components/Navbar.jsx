@@ -1,4 +1,4 @@
-import { Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Input, useDisclosure } from "@chakra-ui/react";
+import { Box, Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Input, useDisclosure } from "@chakra-ui/react";
 import React from 'react';
 function HambergerNavbar() {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -9,6 +9,7 @@ function HambergerNavbar() {
         <Button ref={btnRef} colorScheme='teal' onClick={onOpen}>
           Open
         </Button>
+      
         <Drawer
           isOpen={isOpen}
           placement='left'
