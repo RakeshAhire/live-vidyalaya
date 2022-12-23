@@ -11,7 +11,7 @@ const Header = () => {
   const logout = () => {
     magic.user.logout().then(() => {
       setUser({ user: null });
-      Router.push('/login');
+      Router.push('/');
     });
   };
 
