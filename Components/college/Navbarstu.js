@@ -22,6 +22,7 @@ import * as React from 'react'
 import { FiMenu } from 'react-icons/fi'
 import Link from 'next/link'
 import Layout from '../layout'
+import MainChat from '../chat/MainChat'
 
  const Navbarstu = () => {
   const isDesktop = useBreakpointValue({ base: false, lg: true, md:true})
@@ -37,7 +38,7 @@ import Layout from '../layout'
               <Box >
                 <ButtonGroup  variant="link"  display="flex" justifyContent="space-evenly" gap="100px">
                   <Layout/>
-                  {['lectures', 'assignments', 'discussion', 'support',"profile"].map((item) => (
+                  {['lectures', 'assignments', "discussion", 'support',"profile"].map((item) => (
                     <Button textDecoration="none" key={item}><Link href={`/student/${item}`}>{item}</Link></Button>
                   ))}
                 </ButtonGroup>
